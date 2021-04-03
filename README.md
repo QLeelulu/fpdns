@@ -11,6 +11,12 @@ Fast Private DNS，提供自定义的DNS记录配置和DNS解析缓存。
 - 缓存DNS解析结果
 - 上游同时多DNS Server查询
 
+## 各系统测试情况
+
+- Linux: 已稳定运行3年多
+- Darwin: 已开发测试
+- Windows: 未测试
+
 ## 安装
 
 直接执行如下命令：
