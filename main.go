@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	_ "net/http/pprof"
 	"os"
 	"os/signal"
@@ -33,8 +34,9 @@ func parseFlag() {
 	flag.Parse()
 
 	if confDir == "" {
+		fmt.Println("配置目录 conf_dir 参数必须指定")
 		flag.Usage()
-		panic("配置目录 conf_dir 参数必须指定")
+		os.Exit(1)
 	}
 }
 
