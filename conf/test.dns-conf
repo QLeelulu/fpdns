@@ -1,0 +1,18 @@
+
+# 这是注释, this is comment
+web.fpdns.com. 172800  IN      A       192.168.1.36
+
+# Load Balancing
+about.fpdns.com. 172800  IN      A       192.168.1.47
+about.fpdns.com. 172800  IN      A       192.168.1.48
+about.fpdns.com. 172800  IN      A       192.168.1.49
+
+# CNAME
+my.fpdns.com. 172800  IN     CNAME    about.fpdns.com
+
+# wildcard record
+*.fpdns.com. 172800  IN     A    192.168.1.12
+
+# PTR, "dig -x 192.168.1.224 +short" will return "c224.fpdns.com"
+192.168.1.224. 172800  IN  PTR c224.fpdns.com
+c224.fpdns.com. 172800  IN  A   192.168.1.224
