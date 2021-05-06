@@ -19,7 +19,7 @@ Fast Private DNS，提供自定义的DNS记录配置和DNS解析缓存。
 
 ## 安装
 
-直接下载对应系统的执行文件 [latest release](https://github.com/shunfei/cronsun/releases/latest)。
+直接下载对应系统的执行文件 [latest release](https://github.com/QLeelulu/fpdns/releases/latest)。
 
 如果你熟悉go语言，希望自行编译，可以执行如下命令：
 
